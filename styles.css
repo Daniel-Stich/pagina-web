@@ -404,19 +404,6 @@ nav a:hover { color: var(--color-primary);}
     }
 }
 
-/* RESPONSIVE */
-@media (max-width:768px){
-    header { padding:15px 20px;}
-    .hero { min-height:70vh;}
-    .hero h1 { font-size:2.5rem;}
-    .quienes-somos, .servicios, .galeria { padding:60px 0;}
-    nav { position:left; top:75px; right:0; background:var(--color-white); flex-direction:column; width:100%; padding:0; display:none; box-shadow:var(--shadow-subtle); transition:transform var(--transition-speed); transform:translateX(100%); max-width:300px;}
-    nav.show { display:flex; transform:translateX(0);}
-    nav a { padding:15px 20px; border-bottom:1px solid var(--color-border);}
-    .menu-btn { display:block;}
-    footer .contacto-info { flex-direction:column; gap:20px;}
-    footer .contacto-item img { width:40px; height:40px;}
-}
 
 #maps {
     text-decoration: none; /* Quita el subrayado */
