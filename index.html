@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rossie Saloon Spa</title>
+    <link rel="icon" type="image/jpeg" href="Imagenes/Logo.jpg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================= -->
+    <!-- HEADER                        -->
+    <!-- ============================= -->
+    <header>
+        <div class="Logo">
+            <img src="Imagenes/Logo.jpg" id="Logo" alt="Icono de la empresa">
+            <span class="brand-name"></span>
+        </div>
+
+        <nav id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#quienes-somos">Quiénes Somos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </header>
+    <!-- ============================= -->
+    <!-- HERO                          -->
+    <!-- ============================= -->
+    <section class="hero hero-home" id="inicio">
+        <div class="hero-text">
+            <h1>Realza tu belleza Natural, eligiendo ser Tú</h1>
+            <p>Profesionales del cabello, estética moderna y atención personalizada.</p>
+            <a href="https://wa.me/959707373" target="_blank" class="btn">Contáctanos</a>
+
+        </div>
+    </section>
+    <!-- ============================= -->
+    <!-- QUIÉNES SOMOS                 -->
+    <!-- ============================= -->
+    <section class="quienes-somos" id="quienes-somos">
+    <div class="qs-container">
+        
+        <div class="qs-img fade-element">
+            <img src="Imagenes/quienes1.png" alt="Quienes Somos">
+        </div>
+
+        <div class="qs-text fade-element">
+            <h2>Quiénes Somos</h2>
+            <p>
+                En Rossie Saloon Spa somos profesionales dedicados al cuidado 
+                y la salud capilar que tu cabello necesita.  
+                Somos una peluquería unisex especializada en realzar tu belleza 
+                con técnicas modernas y seguras.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- ============================= -->
+<!-- OFRECEMOS                     -->
+<!-- ============================= -->
+<section class="ofrecemos">
+    <div class="ofrecemos-container">
+        <div class="ofrecemos-text fade-element">
+            <h2>Ofrecemos</h2>
+            <ul>
+                <li>Corte de cabello a la vanguardia</li>
+                <li>Laceados permanentes</li>
+                <li>Botox capilar</li>
+                <li>Tratamientos capilares con vitaminas y ácido hialurónico</li>
+                <li>Colorimetría profesional</li>
+                <li>Mechas balayage y morenas iluminadas</li>
+            </ul>
+        </div>
+        <div class="ofrecemos-img">
+            <img id="ofrecemos-img" src="Imagenes/ofrecemos.png" alt="Servicios que ofrecemos">
+        </div>
+    </div>
+</section>
+    <!-- ============================= -->
+    <!-- SERVICIOS                     -->
+    <!-- ============================= -->
+    <section class="servicios" id="servicios">
+    <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+
+            <div class="card">
+                <img src="Imagenes/corteMariposa.png" alt="Cortes" class="servicio-img">
+                <h3>Cortes</h3>
+                <p>Cortes modernos, clásicos y personalizados.</p>
+                <a href="cortes.html" class="btn">Ver más</a>
+            </div>
+
+            <div class="card">
+                <img src="Imagenes/coloracion1.png" alt="Coloración" class="servicio-img">
+                <h3>Coloración</h3>
+                <p>Balayage, mechas, tintes profesionales y más.</p>
+                <a href="coloracion.html" class="btn">Ver más</a>
+            </div>
+
+            <div class="card">
+                <img src="Imagenes/peinados1.png" alt="Peinados" class="servicio-img">
+                <h3>Peinados</h3>
+                <p>Peinados para bodas, eventos y ocasiones especiales.</p>
+                <a href="peinados.html" class="btn">Ver más</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- ============================= -->
+    <!-- GALERÍA                       -->
+    <!-- ============================= -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <h2>Galería</h2>
+            <div class="galeria-grid">
+                <img src="Imagenes/img1.png" alt="Peluquería Rossy 1">
+                <img src="Imagenes/img2.jpg" alt="Peluquería Rossy 2">
+                <img src="Imagenes/cortepixiemediano.png" alt="Peluquería Rossy 3">
+                <img src="Imagenes/img4.jpg" alt="Peluquería Rossy 4">
+                <img src="Imagenes/img5.jpg" alt="Peluquería Rossy 5">
+                <img src="Imagenes/img6.jpg" alt="Peluquería Rossy 6">
+            </div>
+        </div>
+    </section>
+
+<!-- ============================= -->
+<!-- FOOTER CON CONTACTO           -->
+<!-- ============================= -->
+<footer id="contacto" class="footer">
+    <div class="footer-container">
+
+        <!-- Sección contacto -->
+<div class="footer-section">
+    <h3>Contacto</h3>
+
+    <div class="footer-item">
+        <img src="Imagenes/Whatsapp.png" alt="WhatsApp">
+        <a href="https://wa.me/959707373" target="_blank">959 707 373</a>
+    </div>
+
+    <div class="footer-item">
+        <img src="Imagenes/mapa.png" alt="Ubicación">
+        <a href="https://www.google.com/maps/search/?api=1&query=Calle+Cactus+623,+Urb.+Manuel+Correa,+Distrito+Santa+Anita"
+           target="_blank">
+            Calle Cactus #623, Urb. Manuel Correa, Santa Anita
+        </a>
+    </div>
+
+    <div class="footer-item">
+        <img src="Imagenes/relojazul.png" alt="Horario">
+        <p>Lunes a Sabado<br>10:00 AM – 9:00 PM</p>
+    </div>
+</div>
+
+        <!-- Enlaces rápidos -->
+        <div class="footer-section">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes -->
+       <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+            <!--<a href="https://facebook.com/tu-pagina" target="_blank">
+                <img src="Imagenes/facebook.svg" alt="Facebook" class="social-icon">
+            </a>-->
+            <a href="https://www.instagram.com/rossie.saloon/" target="_blank">
+                <img src="Imagenes/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@rossie.saloon.spa" target="_blank">
+                <img src="Imagenes/tiktok.svg" alt="TikTok" class="social-icon">
+            </a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Rossie Saloon Spa – Todos los derechos reservados
+    </div>
+</footer>
+
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>

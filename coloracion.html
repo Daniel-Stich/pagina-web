@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloración - Rossy Salon y Spa</title>
+    <link rel="icon" type="image/jpeg" href="Imagenes/Logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="Logo">
+            <img src="Imagenes/Logo.jpg" id="Logo" alt="Icono de la empresa">
+            <span class="brand-name"></span>
+        </div>
+        <nav id="nav">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#quienes-somos">Quiénes Somos</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="index.html#galeria">Galería</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <section class="hero" style="background-image: url('Imagenes/coloracion.png');">
+        <div class="hero-text">
+            <h1>Coloración</h1>
+            <p>Descubre nuestros tratamientos de coloración, mechas y balayage de tendencia.</p>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div class="container">
+            <h2>Nuestros Servicios de Color</h2>
+            <div class="galeria-grid">
+                <div class="card-service">
+                    <img src="Imagenes/tinte1.png" alt="Balayage profesional">
+                    <h3>Balayage</h3>
+                    <!-- <p>Precio: S/. 150</p> -->
+                </div>
+                <div class="card-service">
+                    <img src="Imagenes/tinte2.png" alt="Mechas de tendencia">
+                    <h3>Mechas</h3>
+                    <!-- <p>Precio: S/. 120</p> -->
+                </div>
+                <div class="card-service">
+                    <img src="Imagenes/tinte3.png" alt="Tinte Completo">
+                    <h3>Tinte Completo</h3>
+                    <!-- <p>Precio: S/. 100</p> -->
+                </div>
+                <div class="card-service">
+                    <img src="Imagenes/tinte4.png" alt="Color Solido">
+                    <h3>Color Solido</h3>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<footer id="contacto" class="footer">
+    <div class="footer-container">
+
+        <!-- Sección contacto -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+
+            <div class="footer-item">
+                <img src="Imagenes/Whatsapp.png" alt="WhatsApp">
+                <a href="https://wa.me/959707373" target="_blank">959 707 373</a>
+            </div>
+
+            <div class="footer-item">
+                <img src="Imagenes/mapa.png" alt="Ubicación">
+                <a href="https://www.google.com/maps/search/?api=1&query=Calle+Cactus+623,+Urb.+Manuel+Correa,+Distrito+Santa+Anita"
+                   target="_blank">
+                    Calle Cactus #623, Urb. Manuel Correa, Santa Anita
+                </a>
+            </div>
+            <div class="footer-item">
+                <img src="Imagenes/relojazul.png" alt="Horario">
+                <p>Lunes a Sabado<br>10:00 AM – 9:00 PM</p>
+            </div>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="footer-section">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#galeria">Galería</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Redes -->
+        <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+            <!-- <a href="https://facebook.com/tu-pagina" target="_blank">
+                <img src="Imagenes/facebook.svg" alt="Facebook" class="social-icon">
+            </a> -->
+            <a href="https://www.instagram.com/rossie.saloon/" target="_blank">
+                <img src="Imagenes/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@rossie.saloon.spa" target="_blank">
+                <img src="Imagenes/tiktok.svg" alt="TikTok" class="social-icon">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Rossie Saloon Spa – Todos los derechos reservados
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
