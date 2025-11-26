@@ -415,6 +415,92 @@ nav a:hover { color: var(--color-primary);}
 
 }
 
+/* RESPONSIVE MEJORADO PARA CELULAR 📱✅ */
+@media (max-width: 768px){
+
+    header {
+        padding: 15px 20px;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        min-height: 60vh;
+        background-position: center;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.8rem, 7vw, 2.8rem);
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Menú hamburguesa */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        max-width: 280px;
+        padding: 0;
+        box-shadow: var(--shadow-subtle);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    nav.show {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    nav a {
+        padding: 15px;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 0.85rem;
+        text-align: center;
+        color: var(--color-text);
+    }
+
+    /* Secciones apiladas */
+    .servicios, .quienes-somos, .galeria {
+        padding: 60px 15px;
+    }
+
+    /* Footer responsive */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .footer-section {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .social-icons img, .social-icon {
+        margin: 8px;
+    }
+}
 
 #maps {
     text-decoration: none; /* Quita el subrayado */
