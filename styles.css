@@ -316,9 +316,9 @@ nav a:hover { color: var(--color-primary);}
 /* ========== FOOTER MODERNO ========== */
 
 .footer {
-    background: #003c46; /* Azul petróleo elegante */
+    background: #A7E6E6; /* Celeste agua pastel */
     padding: 50px 0 20px;
-    color: #fff;
+    color: #003c46; /* 🔥 Cambia a oscuro para que no sea blanco */
     font-family: "Poppins", sans-serif;
 }
 
@@ -336,7 +336,7 @@ nav a:hover { color: var(--color-primary);}
 }
 
 .footer-section h3 {
-    color: #2dd4bf; /* Turquesa */
+    color: #006D77; /* Teal oscuro elegante */
     margin-bottom: 12px;
     font-size: 20px;
 }
@@ -362,12 +362,12 @@ nav a:hover { color: var(--color-primary);}
 }
 
 .footer-section a {
-    color: #d9d9d9;
+    color: #005f73; /* Azul petróleo legible y moderno */
     text-decoration: none;
 }
 
 .footer-section a:hover {
-    color: #2dd4bf;
+    color: #0a9396; /* Verde agua bonito y armónico */
 }
 
 /* Redes sociales */
@@ -386,8 +386,8 @@ nav a:hover { color: var(--color-primary);}
 .footer-bottom {
     margin-top: 20px;
     text-align: center;
-    color: #bfbfbf;
-    border-top: 1px solid #2dd4bf;
+    color: #005f73; /* 🔥 Cambia para que no sea gris claro/blanco */
+    border-top: 1px solid #0288D1;
     padding-top: 10px;
     font-size: 14px;
 }
