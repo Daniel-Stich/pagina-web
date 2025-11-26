@@ -392,7 +392,28 @@ nav a:hover { color: var(--color-primary);}
     font-size: 14px;
 }
 
+@media (max-width:768px){
 
+   /* Asegura que la imagen de cortes sea flexible */
+   .servicio-img.corte, img.corte {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
+
+   /* Ajusta el texto para que no se vea gigante */
+   .corte-texto {
+      font-size: 16px;
+      padding: 10px;
+      text-align: center;
+   }
+
+   /* Reduce el footer que empuja contenido */
+   .footer {
+      padding-top: 20px;
+   }
+
+}
 
 
 #maps {
