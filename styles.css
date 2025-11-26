@@ -266,6 +266,28 @@ nav a:hover { color: var(--color-primary);}
     font-size: .95rem;
 }
 
+@media (max-width: 900px) {
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .servicios-grid {
+        grid-template-columns: 1fr; /* 1 columna en celular */
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .servicio-img {
+        height: 240px; /* más pequeño para celular */
+    }
+}
+
 /* ==================================== */
 /* GALERÍA                               */
 .galeria { background: var(--color-section-light);}
@@ -410,3 +432,4 @@ nav a:hover { color: var(--color-primary);}
 .social-icon:hover {
   transform: scale(1.1);
 }
+
