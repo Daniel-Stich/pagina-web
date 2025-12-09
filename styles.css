@@ -761,23 +761,3 @@ nav a:hover { color: var(--color-primary);}
         grid-column: 2 / 3;
     }
 }
-
-.hero-laceado {
-    width: 100%;
-    height: 75vh;               /* AUMENTA altura para que no corte */
-    background-image: url('Imagenes/laceados.png');
-    background-size: cover;     /* Profesional */
-    background-position: center top;  /* ← CLAVE: prioriza las caras */
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.hero-laceado .hero-text {
-    position: absolute;
-    bottom: 20%;                /* Baja el texto para no tapar caras */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
-}
