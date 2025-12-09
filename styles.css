@@ -256,6 +256,10 @@ nav a:hover { color: var(--color-primary);}
     object-position: top center; 
 }
 
+.servicio-img.laceado {
+    object-position: center;
+}
+
 .card:hover .servicio-img {
     transform: scale(1.04);
 }
@@ -575,7 +579,6 @@ nav a:hover { color: var(--color-primary);}
     }
 }
 
-/* ====== BANNER PROMO KERALUX (ANCHO Y PRO) ====== */
 /* ====== BANNER PROMO KERALUX (LATERAL + COMPACTO) ====== */
 .banner-promo {
   width: 95%;
@@ -601,12 +604,12 @@ nav a:hover { color: var(--color-primary);}
 /* ===== CONTENIDO INTERNO EN FILA ===== */
 .banner-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%; /* texto ocupa 40% del banner */
-  flex-direction: column; /* para que el botón quede abajo */
-  text-align: left;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;   /* 🔥 centramos texto */
+  align-items: center;  /* 🔥 centramos todo visualmente */
 }
+
 
 /* ===== TEXTO A LA IZQUIERDA ===== */
 .banner-text h2 {
@@ -629,7 +632,7 @@ nav a:hover { color: var(--color-primary);}
 /* ===== BOTÓN ABAJO Y SEPARADO DEL TEXTO ===== */
 .banner-btn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
 }
 
@@ -676,7 +679,7 @@ nav a:hover { color: var(--color-primary);}
   width: 100%;
   min-width: 100%;
   height: 260px; /* más angosto ✅ */
-  object-fit: cover;
+  object-fit: contain;
   background: transparent; /* sin fondo blanco ✅ */
 }
 
@@ -709,4 +712,72 @@ nav a:hover { color: var(--color-primary);}
   .carousel-track img { height: 200px; }
   .banner-text h2 { font-size: 20px; }
   .banner-text p { font-size: 14px; width: 94%; }
+}
+
+.detalle-servicio {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.detalle-servicio .descripcion {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.lista-laceados ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+    color: #004951;
+}
+
+.galeria-laceados {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria-laceados img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+/* Centrar solo la última tarjeta cuando quede sola */
+.servicios-grid .card:last-child {
+    grid-column: 2 / 3; /* coloca la tarjeta en el medio */
+}
+
+@media (min-width: 901px) {
+    .servicios-grid .card:last-child {
+        grid-column: 2 / 3;
+    }
+}
+
+.hero-laceado {
+    width: 100%;
+    height: 75vh;               /* AUMENTA altura para que no corte */
+    background-image: url('Imagenes/laceados.png');
+    background-size: cover;     /* Profesional */
+    background-position: center top;  /* ← CLAVE: prioriza las caras */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-laceado .hero-text {
+    position: absolute;
+    bottom: 20%;                /* Baja el texto para no tapar caras */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
 }
