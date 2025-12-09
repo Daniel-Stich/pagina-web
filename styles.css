@@ -794,3 +794,43 @@ nav a:hover { color: var(--color-primary);}
         text-align: center;
     }
 }
+
+/* ===== FIX FOOTER MOBILE — ALINEACIÓN PERFECTA ===== */
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .footer-section {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .footer-item {
+        justify-content: center;        /* 🔥 Centra icono + texto */
+        text-align: center;
+    }
+
+    .footer-item img {
+        width: 26px;
+    }
+
+    .footer-section ul li {
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+}
