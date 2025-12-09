@@ -510,6 +510,75 @@ nav a:hover { color: var(--color-primary);}
     }
 }
 
+/* ===== FOOTER RESPONSIVE SOLO PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+    /* Footer más compacto */
+    .footer {
+        padding: 30px 0 15px;
+        text-align: center;
+    }
+
+    /* Contenedor en columna */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    /* Cada bloque ocupa todo el ancho */
+    .footer-section {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* Títulos más pequeños */
+    .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* Ítems alineados al centro */
+    .footer-item {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer-item img {
+        width: 26px;
+    }
+
+    /* Enlaces */
+    .footer-section ul li {
+        margin-bottom: 6px;
+    }
+
+    .footer-section a {
+        font-size: 0.95rem;
+    }
+
+    /* Redes sociales centradas */
+    .social-icons {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .social-icon,
+    .social-icons img {
+        width: 32px;
+        height: 32px;
+        margin: 0 6px;
+    }
+
+    /* Parte inferior más compacta */
+    .footer-bottom {
+        font-size: 13px;
+        padding-top: 12px;
+        margin-top: 15px;
+    }
+}
+
 #maps {
     text-decoration: none; /* Quita el subrayado */
     color: inherit;         /* Hereda el color del texto del contenedor */
@@ -755,17 +824,6 @@ nav a:hover { color: var(--color-primary);}
     box-shadow: 0 4px 15px rgba(0,0,0,0.12);
 }
 
-/* Centrar solo la última tarjeta cuando quede sola */
-.servicios-grid .card:last-child {
-    grid-column: 2 / 3; /* coloca la tarjeta en el medio */
-}
-
-@media (min-width: 901px) {
-    .servicios-grid .card:last-child {
-        grid-column: 2 / 3;
-    }
-}
-
 /* ---- RESPONSIVE PARA LACEADOS ---- */
 @media (max-width: 768px) {
 
@@ -798,69 +856,3 @@ nav a:hover { color: var(--color-primary);}
     }
 }
 
-/* ===== FOOTER OPTIMIZADO ===== */
-.footer {
-    background: #A0DEE4;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.footer-section h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.8rem;
-    font-weight: 600;
-}
-
-.footer-item, 
-.footer-section ul li a {
-    font-size: 1.1rem;
-}
-
-.footer-item img {
-    width: 28px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.footer-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.6rem;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.social-icons img {
-    width: 36px;
-    height: 36px;
-}
-
-.footer-bottom {
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid #8fcbd1;
-    font-size: 1rem;
-}
