@@ -306,6 +306,10 @@ nav a:hover { color: var(--color-primary);}
     .servicio-img.peinado {
         object-position: top center !important;
     }
+
+    .servicio-img.laceado {
+        object-position: center !important;
+    }
 }
 
 
