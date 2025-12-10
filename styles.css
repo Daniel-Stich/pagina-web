@@ -856,3 +856,9 @@ nav a:hover { color: var(--color-primary);}
     }
 }
 
+/* Centrar la última tarjeta cuando quede sola en desktop */
+@media (min-width: 901px) {
+    .servicios-grid .card:last-child {
+        grid-column: 2; /* La coloca en la columna del medio */
+    }
+}
